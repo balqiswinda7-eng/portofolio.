@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0b1e30">
+<title>Portfolio — Balqis Winda Amaliah</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-ambient"></div>
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+<div class="progress-bar" id="progress-bar"></div>
+<div id="flash"></div>
+
+<!-- HEADER -->
+<header>
+  <a href="#" class="logo">Porto<em>folio.</em></a>
+
+  <!-- Desktop nav -->
+  <nav class="desk-nav">
+    <ul>
+      <li><a href="#" class="nav-link active" data-index="0">Home</a></li>
+      <li><a href="#" class="nav-link" data-index="1">Skills</a></li>
+      <li><a href="#" class="nav-link" data-index="2">Projects</a></li>
+      <li><a href="#" class="nav-link" data-index="3">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hamburger button -->
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- Mobile full-screen menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="close-btn" id="closeMenu"><i class="fas fa-times"></i></button>
+  <a href="#" class="mob-nav-link" data-index="0">Home</a>
+  <a href="#" class="mob-nav-link" data-index="1">Skills</a>
+  <a href="#" class="mob-nav-link" data-index="2">Projects</a>
+  <a href="#" class="mob-nav-link" data-index="3">Contact</a>
+</div>
+
+<!-- Dots nav -->
+<nav class="dots-nav">
+  <button class="dot active" data-index="0"></button>
+  <button class="dot" data-index="1"></button>
+  <button class="dot" data-index="2"></button>
+  <button class="dot" data-index="3"></button>
+</nav>
+
+<!-- Scroll hint -->
+<div class="scroll-hint" id="scroll-hint">
+  <span>scroll</span>
+  <i class="fas fa-chevron-down"></i>
+</div>
+
+<!-- ══ VIEWPORT ══ -->
+<div id="viewport">
+
+  <!-- PANEL 0 — HOME -->
+  <div class="panel" id="panel-0" data-index="0" data-state="active">
+    <div class="card">
+      <div class="home-inner">
+        <div class="home-text">
+          <span class="badge reveal">Web Designer &amp; Developer</span>
+          <h1 class="reveal">halo, Saya <em>Balqis Winda Amaliah</em></h1>
+          <p class="reveal">Mahasiswi sistem informasi yang berfokus pada pengembangan web dan UI/UX. Aktif mengasah kompetensi dengan menciptakan proyek antarmuka responsif yang berorientasi pada pengalaman pengguna. Sebagai pembelajar yang dinamis, saya selalu menyambut baik masukan dan saran yang membangun. Silakan hubungi saya untuk bertukar pikiran atau peluang kolaborasi lebih lanjut</p>
+          <div class="cta-row reveal">
+            <a href="#" class="btn btn-primary nav-action" data-index="2">Lihat Project <i class="fas fa-arrow-right"></i></a>
+            <a href="#" class="btn btn-outline nav-action" data-index="3">Hubungi Saya</a>
+            <a href="cv-balqis.pdf" target="_blank" class="cv-link"><i class="fas fa-file-alt"></i> Download CV</a>
+          </div>
+          <div class="social-row reveal">
+            <a href="https://www.instagram.com/windaamalia___?igsh=MW9lZ2l5Y3UxcDc5dQ==" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/6285706715894" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://github.com/balqiswinda7-eng" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="mailto:balqiswinda7@gmail.com" title="Gmail"><i class="far fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="home-visual reveal">
+          <div class="photo-box">
+            <img src="foto.jpeg" alt="foto.jpeg">
+          </div>
+          <div class="xp-badge">
+            <p>1 Tahun<br>Pengalaman</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PANEL 1 — SKILLS -->
+  <div class="panel" id="panel-1" data-index="1" data-state="before">
+    <div class="card">
+      <p class="section-label reveal">My Skills</p>
+      <h2 class="section-title reveal">Keahlian &amp; Teknologi</h2>
+      <div class="skills-layout">
+        <div class="reveal">
+          <div class="skill-cat-title"><i class="fas fa-code"></i> Bahasa Pemrograman</div>
+          <div class="skill-grid">
+            <div class="sk"><i class="fab fa-html5" style="color:#E34F26"></i><span>HTML</span></div>
+            <div class="sk"><i class="fab fa-css3-alt" style="color:#1572B6"></i><span>CSS</span></div>
+            <div class="sk"><i class="fab fa-js" style="color:#F7DF1E"></i><span>JS</span></div>
+            <div class="sk"><i class="fab fa-python" style="color:#3776AB"></i><span>Python</span></div>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="skill-cat-title"><i class="fas fa-database"></i> Database</div>
+          <div class="skill-grid">
+            <div class="sk"><i class="fas fa-database" style="color:#336791"></i><span>PostgreSQL</span></div>
+            <div class="sk"><i class="fas fa-table" style="color:#00758F"></i><span>MySQL</span></div>
+            <div class="sk"><i class="fas fa-fire" style="color:#FFCA28"></i><span>Firebase</span></div>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="skill-cat-title"><i class="fas fa-tools"></i> Tools</div>
+          <div class="skill-grid">
+            <div class="sk"><i class="fab fa-docker" style="color:#2496ED"></i><span>Docker</span></div>
+            <div class="sk"><i class="fab fa-git-alt" style="color:#F05032"></i><span>Git</span></div>
+            <div class="sk"><i class="fab fa-figma" style="color:#F24E1E"></i><span>Figma</span></div>
+            <div class="sk"><i class="fab fa-github" style="color:#fff"></i><span>GitHub</span></div>
+            <div class="sk">
+              <svg role="img" viewBox="0 0 24 24" width="24" height="24" style="fill: #ffffff; margin-bottom: 8px;">
+                <path d="M24 22.525H0L12 1.475L24 22.525Z"/>
+              </svg>
+              <span>Vercel</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PANEL 2 — PROJECTS -->
+  <div class="panel" id="panel-2" data-index="2" data-state="before">
+    <div class="card">
+      <p class="section-label reveal">My Work</p>
+      <h2 class="section-title reveal">Project Utama</h2>
+      <div class="reveal">
+        <div class="proj-slider" id="projSlider">
+          <div class="proj-card">
+            <div class="proj-thumb">🛒</div>
+            <div class="proj-info">
+              <h3>E-Commerce App</h3>
+              <p>Toko online responsif dengan kelola produk dan keranjang belanja terintegrasi.</p>
+              <div class="proj-tags"><span class="tag rose">MERN</span><span class="tag">Redux</span><span class="tag">Stripe</span></div>
+            </div>
+          </div>
+          <div class="proj-card">
+            <div class="proj-thumb">✅</div>
+            <div class="proj-info">
+              <h3>Task Manager Pro</h3>
+              <p>Automasi skrip dengan Python, di-deploy penuh di dalam Docker container.</p>
+              <div class="proj-tags"><span class="tag rose">MERN</span><span class="tag">JWT</span><span class="tag">Tailwind</span></div>
+            </div>
+          </div>
+          <div class="proj-card">
+            <div class="proj-thumb">🌌</div>
+            <div class="proj-info">
+              <h3>Twilight Web Design</h3>
+              <p>Rancangan antarmuka premium bertema Twilight yang didesain di Figma.</p>
+              <div class="proj-tags"><span class="tag rose">Figma</span><span class="tag">CSS</span><span class="tag">GSAP</span></div>
+            </div>
+          </div>
+          <div class="proj-card">
+            <div class="proj-thumb">🤖</div>
+            <div class="proj-info">
+              <h3>AI Chatbot</h3>
+              <p>Chatbot berbasis AI menggunakan OpenAI API dengan antarmuka chat real-time.</p>
+              <div class="proj-tags"><span class="tag rose">React</span><span class="tag">OpenAI</span><span class="tag">Node</span></div>
+            </div>
+          </div>
+          <div class="proj-card">
+            <div class="proj-thumb">📊</div>
+            <div class="proj-info">
+              <h3>Dashboard Analytics</h3>
+              <p>Visualisasi data interaktif dengan chart dan laporan real-time terintegrasi.</p>
+              <div class="proj-tags"><span class="tag rose">Vue</span><span class="tag">Chart.js</span><span class="tag">Firebase</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-nav">
+          <button class="sl-btn" id="slidePrev"><i class="fas fa-chevron-left"></i></button>
+          <button class="sl-btn" id="slideNext"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PANEL 3 — CONTACT -->
+  <div class="panel" id="panel-3" data-index="3" data-state="before">
+    <div class="card">
+      <p class="section-label reveal">Get In Touch</p>
+      <h2 class="section-title reveal">Hubungi Saya</h2>
+      <div class="contact-layout">
+        <div class="contact-left reveal">
+          <h3>Mari Terhubung!</h3>
+          <p>Silakan hubungi saya melalui kontak di bawah atau kirim pesan langsung via form.</p>
+          <div class="social-icons-big">
+            <a href="https://instagram.com/" target="_blank" class="sib ig" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/" target="_blank" class="sib wa" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://github.com/" target="_blank" class="sib gh" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="mailto:emailmu@gmail.com" class="sib gm" title="Gmail"><i class="far fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="contact-right reveal">
+          <div class="field"><input type="email" placeholder="Email Anda" required></div>
+          <div class="field"><textarea placeholder="Tulis pesan Anda di sini..." required></textarea></div>
+          <button class="btn btn-primary btn-full">Kirim Pesan <i class="fas fa-paper-plane"></i></button>
+        </div>
+      </div>
+      <p class="copyright">© 2025 <em>Balqis Winda Amaliah</em>. All rights reserved.</p>
+    </div>
+  </div>
+
+</div><!-- /viewport -->
+
+<script src="script.js"></script>
+</body>
+</html>
